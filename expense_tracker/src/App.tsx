@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import * as C from './App.styles';
+import { items } from './data/items';
 
 const App = () => {
+  const [list, setList] = useState(items);
+  const [currentMonth, setCurrentMonth] = useState();
+
   return (
     <C.Container>
       <C.Header>
