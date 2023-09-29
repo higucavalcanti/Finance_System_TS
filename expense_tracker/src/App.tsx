@@ -1,10 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import * as C from './App.styles';
 import { items } from './data/items';
+import { getCurrentMonth } from './helpers/dateFilter';
+import { Item } from './types/Item';
 
 const App = () => {
   const [list, setList] = useState(items);
-  const [currentMonth, setCurrentMonth] = useState();
+  const [filteredList, setFilteredList] = useState<Item[]>([]);
+  const [currentMonth, setCurrentMonth] = useState(getCurrentMonth);
+
+  useEffect(()=>{
+
+  }, [list, currentMonth]);
 
   return (
     <C.Container>
