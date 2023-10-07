@@ -4,6 +4,7 @@ import { items } from './data/items';
 import { FilterListByMonth, getCurrentMonth } from './helpers/dateFilter';
 import { Item } from './types/Item';
 import { TableArea } from './components/TableArea';
+import { InfoArea } from './components/TableArea/InfoArea';
 
 const App = () => {
   const [list, setList] = useState(items);
@@ -21,7 +22,7 @@ const App = () => {
       </C.Header>
       <C.Body>
         
-        {/* Área de informações */}
+        <InfoArea />
 
         {/* Área de inserção */}
 
