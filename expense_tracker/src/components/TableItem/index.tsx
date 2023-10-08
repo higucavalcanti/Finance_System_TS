@@ -1,8 +1,8 @@
-import { formatDate } from '../../../helpers/dateFilter';
-import { Item } from '../../../types/Item';
+import { formatDate } from '../../helpers/dateFilter';
+import { Item } from '../../types/Item';
 import * as C from './styles';
-import { categories } from '../../../data/categories';
-import { Category } from '../../../types/category';
+import { categories } from '../../data/categories';
+import { Category } from '../../types/category';
 
 type Props = {
     item: Item

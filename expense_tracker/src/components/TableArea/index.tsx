@@ -1,5 +1,5 @@
 import { Item } from '../../types/Item';
-import { TableItem } from './TableItem';
+import { TableItem } from '../TableItem';
 import * as C from './styles';
 
 type Props = {

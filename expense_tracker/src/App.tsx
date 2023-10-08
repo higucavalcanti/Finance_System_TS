@@ -4,7 +4,7 @@ import { items } from './data/items';
 import { FilterListByMonth, getCurrentMonth } from './helpers/dateFilter';
 import { Item } from './types/Item';
 import { TableArea } from './components/TableArea';
-import { InfoArea } from './components/TableArea/InfoArea';
+import { InfoArea } from './components/InfoArea';
 import { categories } from './data/categories';
 
 const App = () => {

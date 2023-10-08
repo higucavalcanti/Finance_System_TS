@@ -1,5 +1,5 @@
-import { formatCurrentMonth } from '../../../helpers/dateFilter';
-import { ResumeItem } from '../../ResumeItem';
+import { formatCurrentMonth } from '../../helpers/dateFilter';
+import { ResumeItem } from '../ResumeItem';
 import * as C from './styles'
 
 type Props = {
