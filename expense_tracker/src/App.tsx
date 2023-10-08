@@ -6,6 +6,7 @@ import { Item } from './types/Item';
 import { TableArea } from './components/TableArea';
 import { InfoArea } from './components/InfoArea';
 import { categories } from './data/categories';
+import { InputArea } from './components/InputArea';
 
 const App = () => {
   const [list, setList] = useState(items);
@@ -39,6 +40,12 @@ const App = () => {
     setCurrentMonth(newMonth);
   }
 
+  const handleAddItem = (item: Item) => {
+    let newList = [...list];
+    newList.push(item);
+    setList(newList);
+  }
+
   return (
     <C.Container>
       <C.Header>
@@ -53,7 +60,7 @@ const App = () => {
           expense={expense}
         />
 
-        {/* Área de inserção */}
+        <InputArea onAdd={handleAddItem} />
 
         <TableArea list={filteredList} />
 
