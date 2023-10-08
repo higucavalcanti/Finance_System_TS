@@ -36,4 +36,9 @@ export const formatCurrentMonth = (currentMonth: string): string => {
     let [year,month] = currentMonth.split('-');
     let months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro' ];
     return `${months[parseInt(month) - 1]} de ${year}`;
-}
+};
+
+export const newDateAdjusted = (dateField: string) => {
+    let [year, month, day] = dateField.split('-')
+    return new Date(parseInt(year), parseInt(month) - 1, parseInt(day))
+};
